@@ -105,8 +105,8 @@ section::before {
 section img {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 110%;
+    left: 0px;
+    width: 110vw;
     height: 100vh;
     object-fit: cover;
 }

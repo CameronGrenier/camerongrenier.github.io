@@ -14,7 +14,7 @@
 <body>
 
     <div id="intro">
-        <video autoplay muted plays-inline>
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
             <source src="Intro Animations/intro transition 2.mp4" type="video/mp4">
         </video>
     </div>
@@ -22,13 +22,13 @@
     <script>
         setTimeout(function() {
           document.getElementById("intro").style.display = "none";
-        }, 3000); // 3000 milliseconds = 3 seconds
+        }, 2500); // 3000 milliseconds = 2.5 seconds
     </script>
 
     <header>
-        <a href="#" class="logo">logo</a>
+        <a href="#" class="logo">Grenier</a>
         <nav>
-            <ul>
+            <ul class="nav-ul" id="nav-ul">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#">Projects</a></li>
