@@ -1,9 +1,7 @@
 @import url("https://use.typekit.net/jhu7qgv.css");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0 auto;
     font-family: elza, sans-serif;
     scroll-behavior: smooth;
 }
@@ -25,13 +23,17 @@
 }
 
 body {
+    overflow-x: hidden;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
     background: linear-gradient(#1d1770, #b5d2ff);
 }
 
 header {
+    overflow: hidden;
     background-color: #0c092e;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -40,9 +42,11 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 999;
+    transition: all 0.5s ease-in-out;
 }
 
 header .logo {
+    margin-left: 5vw;
     font-family: elza, sans-serif;
     color: #fff;
     font-size: 2em;
@@ -73,19 +77,18 @@ header ul li a {
 
 header ul li a:hover,
 header ul li a.active {
-
     background: ivory;
     color: #0e0a38;
     background-blend-mode: color-dodge;
 }
-
+  
 section {
-    display: flex;
     overflow: hidden;
     position: relative;
-    top: -4.5vh;
-    width: 100%;
-    Height: 97.6vh;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vw / 3.4);
     padding: 100px;
     justify-content: center;
     align-items: center;
@@ -95,33 +98,35 @@ section::before {
     content: "";
     position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, #0c092e, transparent);
-    z-index: 10000;
+    z-index: 998;
 }
 
-
 section img {
+    display: flex ;
     position: absolute;
+    vertical-align: middle;
     top: 0;
     left: 0px;
-    width: 110vw;
-    height: 100vh;
+    max-width: 100%;
+    height: 100%;
+    width: auto;
     object-fit: cover;
 }
 
 section img#moon {
+    position: absolute;
+    left: 5%;
     mix-blend-mode: screen;
 }
+
 
 section img#snow {
     mix-blend-mode: screen;
     filter: blur(4px);
-}
-
-section img#front {
-    mix-blend-mode: screen;
 }
 
 section img#back {
@@ -130,17 +135,17 @@ section img#back {
 }
 
 #text {
-    position: relative;
-    right: 2vw;
-    top: 20vh;
+    position: absolute;
+    top: 50%;
+    left: 27%;
     color: #fff;
     white-space: nowrap;
-    font-size: 6vw;
+    font-size: 5vw;
 }
 
 .about {
     position: relative;
-    top: -4.5vh;
+    top: 0vh;
     padding: 100px;
     background-color: #0c092e;
 }
@@ -154,4 +159,29 @@ section img#back {
 .about p {
     font-size: 1em;
     color: aliceblue;
+}
+
+.projects {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vw / 3.4);
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects img {
+    display: flex;
+    position: absolute;
+    vertical-align: middle;
+    top: 0;
+    left: 0px;
+    max-width: 100vw;
+    max-height: 100vh;
+    height: auto;
+    width: auto;
+    object-fit: cover;
 }
