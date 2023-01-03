@@ -1,136 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grenier Portfolio</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/jhu7qgv.css" />
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jhu7qgv.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <!-- body -->
+
+  <body>
+    <!-- intro video -->
 
     <div id="intro">
-        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Intro Animations/intro transition 2.mp4" type="video/mp4">
-        </video>
+      <video
+        autoplay="autoplay"
+        loop="loop"
+        muted
+        defaultMuted
+        playsinline
+        oncontextmenu="return false;"
+        preload="auto"
+      >
+        <source
+          src="Intro Animations/intro transition 2.mp4"
+          type="video/mp4"
+        />
+      </video>
     </div>
 
-    <script>
-        setTimeout(function() {
-          document.getElementById("intro").style.display = "none";
-        }, 2500); // 3000 milliseconds = 2.5 seconds
-    </script>
+    <!-- Header & Navbar -->
 
-    <header>
-        <a href="#" class="logo">Grenier</a>
-        <nav>
-            <ul class="nav-ul" id="nav-ul">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <img src="Images/stars.svg" id="stars">
-        <img src="Images/moon.svg" id="moon">
-        <img src="Images/back fog.svg" id="back">
-        <img src="Images/mountain 3.svg" id="m3">
-        <img src="Images/mountain 2.svg" id="m2">
-        <img src="Images/mountain 1.svg" id="m1">
+    <nav id="nav">
+      <a href="#home" class="logo" style="text-decoration: none; color: #fff"
+        >Grenier</a
+      >
 
-        <h1 id="text">Cameron Grenier</h1>
-        
-        <img src="Images/front fog.svg" id="front">
-        <img src="Images/ground rock 2.svg" id="gr2">
-        <img src="Images/ground.svg" id="ground">
-        <img src="Images/shine.svg" id="shine">
-        <img src="Images/left cliff.svg" id="left cliff">
-        <img src="Images/right cliff.svg" id="right cliff">
-        <img src="Images/icicles.svg" id="icicles">
-        <img src="Images/ground rock 1.svg" id="gr1">
-        <img src="Images/bridge.svg" id="bridge">
-        <img src="Images/snow.svg" id="snow">
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="home" id="home">
+      <img src="Images/stars.svg" id="stars" />
+      <img src="Images/moon.svg" id="moon" style="mix-blend-mode: screen" />
+      <img src="Images/mountain3.svg" id="m3" />
+      <img src="Images/back fog.svg" id="back" />
+      <img src="Images/mountain2.svg" id="m2" />
+      <img src="Images/mountain1.svg" id="m1" />
+      <img src="Images/Middle.svg" id="middle" />
+
+      <h1
+        id="text"
+        style="
+          position: absolute;
+          top: 50%;
+          color: #fff;
+          white-space: nowrap;
+          font-size: 5vw;
+        "
+      >
+        Cameron Grenier
+      </h1>
+
+      <img src="Images/Front.svg " id="front" />
+      <img
+        src="Images/snow.svg"
+        id="snow"
+        style="
+          mix-blend-mode: screen;
+          mix-blend-mode: screen;
+          filter: blur(4px);
+        "
+      />
     </section>
+
     <div class="about" id="about">
-        <h2> About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At qui sequi magnam nihil rem error sed, cum fugiat
-            consequatur esse quibusdam doloribus? Tempora optio corrupti veniam quod cumque ex minus quam enim ad,
-            facilis sunt assumenda iusto libero aliquam porro unde dicta et earum. Quas exercitationem delectus expedita
-            itaque sit unde doloremque, tempore aliquam voluptatibus cumque autem magni animi possimus odit soluta et
-            quibusdam blanditiis omnis incidunt. Quaerat facere ad voluptatum aut eum animi explicabo dolorum illum
-            consequuntur ea eos, expedita fugit eaque. Maiores explicabo quisquam quasi labore quaerat reiciendis
-            impedit ut hic. A quasi repellendus sapiente consectetur magnam. Sit.<br><br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam recusandae, tenetur officiis inventore
-            nulla ut voluptatibus iusto soluta consequatur quaerat illo voluptatum quia sunt error consectetur labore
-            voluptate molestias, veritatis minus quo non neque, ea reprehenderit? Inventore similique vero atque
-            cupiditate at corporis pariatur nihil culpa soluta rerum perferendis repudiandae reiciendis, obcaecati
-            dolores id aut ipsam voluptatum incidunt quis laborum tenetur! Soluta nisi aliquid fugit officiis,
-            perspiciatis deserunt tempore, nesciunt totam, dicta molestiae architecto veniam vel error sunt sed!
-            Voluptas quaerat doloribus voluptatem nemo, eum assumenda, maxime reprehenderit iure ea fugiat numquam
-            voluptatibus quasi voluptates facere omnis. Earum nam quo dolor soluta vitae tenetur voluptatibus quis
-            sapiente eaque incidunt. Corporis assumenda error possimus. Quas eius enim sed perspiciatis sit ab nobis
-            assumenda quaerat optio odio odit fuga dolorum facilis mollitia nihil architecto officiis saepe quae cum,
-            excepturi labore? Consectetur harum molestiae ab? Porro labore officia voluptatem quam numquam voluptate
-            ipsa quibusdam ipsam autem corrupti voluptates, nihil, aut consequuntur odio, minus impedit! Officia
-            molestias odio optio incidunt. Iusto nulla odit id. Illum corrupti qui quos vitae ex neque quae cupiditate
-            odit in! Minima cumque odit porro at, doloremque, eius aspernatur voluptate earum, rem animi vero omnis
-            nesciunt dignissimos. Distinctio, omnis reprehenderit.<br><br>Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quos voluptatem magni deleniti ratione eos
-            recusandae fugit, incidunt veniam accusantium. Et non deleniti rerum dolores, ad molestias fuga, eveniet,
-            optio quibusdam cupiditate explicabo perspiciatis maiores sequi. Possimus, soluta! Sunt voluptatibus
-            architecto quia laboriosam quae quaerat pariatur, voluptatum aperiam cupiditate, aliquid nemo.</p>
+      <h2>About</h2>
+      <p>
+        Hi, my name is Cameron Grenier and I am pursuing a major in Physics with
+        a minor in computing at the University of Waterloo. While I may not have
+        a lot of traditional programming experience, I have a strong foundation
+        in problem-solving and analytical thinking, in addition to the ability
+        to rapidly learn new concepts, which I believe are crucial skills for a
+        successful developer.<br /><br />
+
+        I have been able to apply these skills to learn HTML, CSS, and
+        JavaScript, and create this page from scratch. Academically, I've
+        studied Python for data science applications, Object Oriented
+        Programming, computer science fundamentals, and functional programming
+        with Racket. I am always looking for opportunities to learn and grow as
+        a developer, and I am excited to see where my passion for programming
+        will take me.<br /><br />
+
+        Thank you for taking the time to visiting this website. I hope you will
+        take a look at some of the projects I have worked on (and for more
+        details about this site) and consider me for any future
+        opportunities.<br /><br /><br /><br />
+
+        <span class="touch">
+          <a href="#" style="text-decoration: none; color: #fff"
+            >Feel free to get in touch!</a
+          >
+        </span>
+      </p>
     </div>
 
-    <script>
-        let stars = document.getElementById('stars');
-        let moon = document.getElementById('moon');
-        let back_fog = document.getElementById('back');
-        let m3 = document.getElementById('m3');
-        let m2 = document.getElementById('m2');
-        let m1 = document.getElementById('m1');
-        let text = document.getElementById('text');
-        let front = document.getElementById('front');
-        let gr2 = document.getElementById('gr2');
-        let ground = document.getElementById('ground');
-        let shine = document.getElementById('shine');
-        let left_cliff = document.getElementById('left cliff');
-        let right_cliff = document.getElementById('right cliff');
-        let icicles = document.getElementById('icicles');
-        let gr1 = document.getElementById('gr1');
-        let bridge = document.getElementById('bridge');
-        let snow = document.getElementById('snow');
+    <section class="projects" id="projects">
+      <img src="Images/Cave/Stars.svg" id="stars2" />
+      <img
+        src="Images/Cave/moon.svg"
+        id="moon2"
+        style="mix-blend-mode: screen"
+      />
+      <img src="Images/Cave/M3.svg" id="m32" />
+      <img src="Images/Cave/M2.svg" id="m22" />
+      <img src="Images/Cave/Shine.svg" id="shine2" />
+      <img src="Images/Cave/Fore.svg" id="fore2" />
+      <h1 id="text2">
+        <a
+          style="
+            position: absolute;
+            top: 50%;
+            color: #fff;
+            white-space: nowrap;
+            font-size: 5vw;
+          "
+          href="projects.html"
+          >Projects</a
+        >
+      </h1>
+      <img src="Images/Cave/Snow.svg" id="snow2" style= "mix-blend-mode: screen;
+      filter: blur(4px); width: 100%"">
+    </section>
 
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY;
-            stars.style.left = value * 0.25 + 'px';
-            moon.style.top = value * 1.05 + 'px';
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Made with blood, sweat, and Stackoverflow
+            </p>
+          </div>
 
-            back_fog.style.left = value * 0.1 + 'px';
-            back_fog.style.top = value * 0.1 + 'px';
-            m3.style.top = value * 0.1 + 'px';
-            m2.style.top = value * 0.125 + 'px';   
-            m1.style.top = value * 0.15 + 'px';
+          <div class="col-xs-6 col-md-3">
+            <h6>Projects</h6>
+            <ul class="footer-links">
+              <li><a href="projects.html#Portfolio">Portfolio Website</a></li>
+            </ul>
+          </div>
 
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2022 All Rights Reserved by
+              <a href="#">Cameron Grenier</a>.
+            </p>
+          </div>
 
-            text.style.marginRight = value * 5.2 + 'px';
-
-            front.style.top = value * 0.25 + 'px';
-            front.style.left = value * 0.1 + 'px';
-
-            snow.style.left = value * 5 + 'px';
-
-
-
-        })
-
-    </script>
-
-</body>
-
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
+
+<script src="script.js"></script>

@@ -6,12 +6,6 @@
     scroll-behavior: smooth;
 }
 
-.touch {
-    font-size: 3em;
-    font-weight: 900;
-}
-
-
 #intro {
     position: fixed;
     top: 0;
@@ -33,7 +27,8 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background: linear-gradient(#1d1770, #b5d2ff);
+    background: #1b263b;
+    color: aliceblue;
 }
 
 nav {
@@ -106,6 +101,7 @@ nav {
 .hamburger {
     display: none;
 }
+
 
 /*Stying for small screens*/
 @media screen and (max-width: 800px) {
@@ -196,85 +192,16 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-section.home {
+/* portfolio website */
+
+.portfolio {
     display: flex;
-    overflow: hidden;
-    position: relative;
-    top: 0;
-    width: 100%;
-    Height: 100vh;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
     align-items: center;
-}
-
-section.home::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, #0c092e, transparent);
-    z-index: 998;
-}
-
-section.home img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.about {
-    position: relative;
-    top: 0vh;
-    padding: 100px;
-    background-color: #0c092e;
-}
-
-.about h2 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    color: aliceblue;
-}
-
-.about p {
-    line-height: 200%;
-    font-size: 1em;
-    color: aliceblue;
-}
-
-section.projects {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    top: 0;
-    width: 100%;
-    Height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-section.projects::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to bottom, #0c092e, transparent);
-    z-index: 998;
-    box-sizing: unset;
-}
-
-section.projects img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin: 0 30px;
+    padding: 0 2rem;
+    max-width: 600px;
 }
 
 /* footer */
@@ -347,7 +274,7 @@ section.projects img {
     margin-left: 6px;
     margin-right: 0;
     border-radius: 100%;
-    background-color: #0c092e
+    background-color: aliceblue
 }
 
 .copyright-text {
@@ -390,15 +317,12 @@ section.projects img {
     font-size: 13px
 }
 
-.fa, .fab, .fad, .fal, .far, .fas {
-    line-height: inherit !important;
-}
-
 .social-icons a {
     background-color: aliceblue;
     color: aliceblue;
-    font-size: 25px;
+    font-size: 16px;
     display: inline-block;
+    line-height: 44px;
     width: 44px;
     height: 44px;
     text-align: center;

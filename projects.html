@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Grenier Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style_projects.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <!-- body -->
+
+  <body>
+    <!-- intro video -->
+
+    <div id="intro">
+      <video
+        autoplay="autoplay"
+        loop="loop"
+        muted
+        defaultMuted
+        playsinline
+        oncontextmenu="return false;"
+        preload="auto"
+      >
+        <source
+          src="Intro Animations/intro transition 2.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <!-- Header & Navbar -->
+
+    <nav id="nav">
+      <a href="#home" class="logo" style="text-decoration: none; color: #fff"
+        >Grenier</a
+      >
+
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- This Website -->
+
+    <div class="portfolio">
+      <h1 style="padding: 60px 30px">Portfolio Website</h1>
+      <div class="text">
+        <p>
+          This website is a portfolio website that I made to showcase my work as
+          a developer as I improve my skills throughout my career. It may be a
+          little baren now, but I hope to fill this page with high quality
+          projects that I can be proud of.<br /><br />
+
+          I created this site using HTML, CSS, and Javascript, which I had no
+          experience with before starting. I learned these three languages
+          through the development of a number of failed websites, and a lot of
+          youtube.<br /><br />
+
+          I made use of bootstrap and a mixture of templates I found on CodePen
+          for the footer of the site. I also made use of the responsive design
+          of the boostrap templates to edit my site for mobile use (which I have
+          not been fully successful at just yet... though I hope to remove the
+          aside in the future)<br /><br />
+
+          I made use of Javascript to create the responsive hamburger menu, as
+          well as the website intro video, and the parallax effect throughout
+          the site<br /><br />
+
+          I made attempts at version control using Git, but I am still learning
+          how to do this and hope to gain more experience with it in future
+          work. If you'd like to check out the repository, you can do so
+          <i
+            ><a
+              href="https://github.com/CameronGrenier/camerongrenier.github.io"
+              style="
+                color: aliceblue;
+                text-decoration: none;
+                font-size: 1.1em;
+                padding: 0.5em;
+              "
+              >here</a
+            ></i
+          ><br /><br />
+
+          I hope you enjoy my site, and other projects to come!
+        </p>
+      </div>
+    </div>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Made with blood, sweat, and Stackoverflow
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Projects</h6>
+            <ul class="footer-links">
+              <li><a href="projects.html#Portfolio">Portfolio Website</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2022 All Rights Reserved by
+              <a href="#">Cameron Grenier</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="script.js"></script>
