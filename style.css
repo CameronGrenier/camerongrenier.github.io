@@ -4,7 +4,14 @@
     margin: 0 auto;
     font-family: elza, sans-serif;
     scroll-behavior: smooth;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
 }
+
+*::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
 
 .touch {
     font-size: 3em;
@@ -427,15 +434,11 @@ section.projects img {
     background-color: #29aafe
 }
 
-.social-icons a.twitter:hover {
+.social-icons a.github:hover {
     background-color: #29aafe
 }
 
 .social-icons a.linkedin:hover {
-    background-color: #29aafe
-}
-
-.social-icons a.dribbble:hover {
     background-color: #29aafe
 }
 
