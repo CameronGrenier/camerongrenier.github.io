@@ -1,154 +1,134 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Grenier Portfolio</title>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style_contact.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Grenier Portfolio</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
-      crossorigin="anonymous"
-    />
-  </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-  <!-- body -->
+  <link rel="icon" href="Images/favicon-moon.png" type="image/x-icon">
 
-  <body>
-    <!-- intro video -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style_contact.css" />
 
-    <div id="intro">
-      <video
-        autoplay="autoplay"
-        loop="loop"
-        muted
-        defaultMuted
-        playsinline
-        oncontextmenu="return false;"
-        preload="auto"
-      >
-        <source
-          src="Intro Animations/intro transition 2.mp4"
-          type="video/mp4"
-        />
-      </video>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+</head>
+
+<!-- body -->
+
+<body>
+  <!-- intro video -->
+
+  <div id="intro">
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+      <source src="Intro Animations/intro transition 2.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Header & Navbar -->
+
+  <nav id="nav">
+    <a href="index.html" class="logo" style="text-decoration: none; color: #fff">Grenier</a>
+
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+  <!-- Contact Me! -->
+
+
+
+  <div class="contact">
+    <h1><span style="color: #29aafe"> Questions? </span>Feel free to reach out!</h1>
+    <div class="container">
+      <h2><a href="Software Resume.pdf" target="_blank" style="text-decoration: none; color: aliceblue;
+                                                                padding-top: 10px; padding-bottom: 10px;">See my CV
+          here</a></h2>
+    </div>
+    <div class="container">
+      <h2><a href="mailto:camerongrenier12345@gmail.com" style="text-decoration: none; color: aliceblue;
+                                                                      padding-top: 10px; padding-bottom: 10px;">Email
+          me here</a></h2>
     </div>
 
-    <!-- Header & Navbar -->
 
-    <nav id="nav">
-      <a
-        href="index.html"
-        class="logo"
-        style="text-decoration: none; color: #fff"
-        >Grenier</a
-      >
 
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
 
-    <!-- Contact Me! -->
+  </div>
 
-    <div class="contact">
-        <h1><span style="color: #29aafe"> Interested? </span>Let me know!</h1>
-        <div class="container">
-            <h2><a href="cameron_grenier_Resume (2).pdf" style="text-decoration: none; color: aliceblue;">See my CV here</a></h2>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">
+            Made with blood, sweat, and Stackoverflow
+          </p>
         </div>
 
+        <div class="col-xs-6 col-md-3">
+          <h6>Projects</h6>
+          <ul class="footer-links">
+            <li><a href="projects.html#Portfolio">Portfolio Website</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
     </div>
-
-    
-
-
-
-
-    <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">
-              Made with blood, sweat, and Stackoverflow
-            </p>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Projects</h6>
-            <ul class="footer-links">
-              <li><a href="projects.html#Portfolio">Portfolio Website</a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="index.html#home">Home</a></li>
-              <li><a href="index.html#about">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">
+            Copyright &copy; 2022 All Rights Reserved by
+            <a href="#">Cameron Grenier</a>.
+          </p>
         </div>
-        <hr />
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">
-              Copyright &copy; 2022 All Rights Reserved by
-              <a href="#">Cameron Grenier</a>.
-            </p>
-          </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li>
-                <a
-                  class="facebook"
-                  href="https://www.instagram.com/cameron_grenier/"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a class="github" href="https://github.com/CameronGrenier"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="linkedin"
-                  href="https://www.linkedin.com/in/cameron-grenier-63ba7a223/"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li>
+              <a class="facebook" href="https://www.instagram.com/cameron_grenier/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a class="github" href="https://github.com/CameronGrenier"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a class="linkedin" href="https://www.linkedin.com/in/cameron-grenier-63ba7a223/"><i
+                  class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
 
 <script src="script.js"></script>
